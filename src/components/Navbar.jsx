@@ -1,23 +1,25 @@
 import React from 'react'
 import CartWidget from './CartWidget'
 import { Menu, MenuButton, MenuList, MenuItem, Flex, Box, Spacer } from "@chakra-ui/react"
+import "./Estilos.css"
+import navBarLogo2 from '../assets/img/logo-boca.png'
 
 const Navbar = () => {
   return (
     <div>
 
-<Flex>
-  <Box p='4' bg='red.400'>
-  <h1>BocaShop</h1>
+<Flex className='navbarstyle'>
+  <Box className='color-nav' p='4'>
+    <img src={navBarLogo2} className="logo-navbar" alt="Logo de la Tienda" />
   </Box>
   <Spacer />
-  <Box p='4' bg='blue.400'>
+  <Box p='4'>
   <Menu>
-       <MenuButton>
+       <MenuButton className='color-nav'>
         Categorias
        </MenuButton>
        <MenuList>
-       <MenuItem>Camisetas</MenuItem>
+       <MenuItem >Camisetas</MenuItem>
        <MenuItem>Shorts</MenuItem>
        <MenuItem>Buzos</MenuItem>
        <MenuItem>Pantalon</MenuItem>
@@ -25,7 +27,7 @@ const Navbar = () => {
       </Menu>
   </Box>
   <Spacer />
-  <Box p='4' bg='green.400'>
+  <Box className='color-nav' p='4'>
   <CartWidget />
   </Box>
 </Flex>
