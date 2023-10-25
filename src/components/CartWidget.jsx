@@ -19,7 +19,7 @@ const CartWidget = () => {
         </Box>
         </Flex>
     </div>
-  )
+  ) 
 }
 
 export default CartWidget
