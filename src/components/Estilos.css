@@ -1,10 +1,20 @@
-.navbarstyle{
+.navbarstyle {
     background-color: rgb(3, 3, 59);
 }
-.color-nav{
+
+.color-nav {
     color: whitesmoke;
 }
-.logo-navbar{
+
+.logo-navbar {
     width: 80px;
     height: 45px;
+}
+
+.loader {
+    min-height: calc(100vh);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

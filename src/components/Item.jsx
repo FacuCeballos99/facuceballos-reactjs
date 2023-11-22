@@ -2,29 +2,27 @@ import { Card, CardBody, Stack, Heading, Divider, CardFooter, Button, ButtonGrou
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Item = ({nombre, id}) => {
+const Item = ({ nombre, id, imagen }) => {
   return (
     <div>
-        <Card maxW='sm'>
-  <CardBody>
-    <Text>
-      Image
-    </Text>
-    <Stack mt='6' spacing='3'>
-      <Heading size='md'>{nombre}</Heading>
-    </Stack>
-  </CardBody>
-  <Divider />
-  <CardFooter>
-    <ButtonGroup spacing='2'>
-      <Link to={`/product/${id}`}>
-      <Button variant='solid' colorScheme='blue'>
-        Ver Detalles del Producto
-      </Button>
-      </Link>
-    </ButtonGroup>
-  </CardFooter>
-</Card>
+      <Card maxW='sm'>
+        <CardBody>
+          <img src={imagen} />
+          <Stack mt='6' spacing='3'>
+            <Heading size='md'>{nombre}</Heading>
+          </Stack>
+        </CardBody>
+        <Divider />
+        <CardFooter>
+          <ButtonGroup spacing='2'>
+            <Link to={`/product/${id}`}>
+              <Button variant='solid' colorScheme='rgb(3, 3, 59);'>
+                Ver Detalles del Producto
+              </Button>
+            </Link>
+          </ButtonGroup>
+        </CardFooter>
+      </Card>
     </div>
   )
 }
